@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*reset CSS mini*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/************************** header **************************/
+
+.header-top{
+    width: 100%;
+    height: 100px;
+    background-color: #5cc6ba;
+    padding: 0 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.header-title{
+    font-size: 5.5rem;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li{
+    margin: 0 10px;
+}
+
+.header-nav a{
+    font-size: 1.0rem;
+    font-weight: 1000;
+    transition: .5s;
+}
+
+.header-nav a:hover{
+    color: #000000;
+}
+
+.active-scroll{
+    background-color: rgba(0, 0, 0, 0.568);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .3);
+}
+/************************** fim header **************************/
+
+
+/************************** hero **************************/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0)),
+        url(../images/mulheres_yoga.jpg);
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    
+/************************** fim hero **************************/
+
+
+/************************** tour **************************/
+
+.tour {
+    width: 80%;
+    min-height: 100vh;
+    margin: 20px auto;
+    padding: 80px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+.line {
+    width: 150px;
+    height: 5px;
+    background-color: #5cc6ba;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.tour-list {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.tour-list-item {
+    width: 20%;
+}
+
+.tour-list-item h3 {
+    font-size: 4vmin;
+    margin: 20px 0 0;
+}
+
+.tour-list-item p {
+    font-size: 3vmin;
+    margin: 10px 0 40px;
+}
+
+.img-tour {
+    width: 80%;
+    
+}
+
+.img-tour:hover {
+    transform: scale(1.05);
+}
+
+.app-text{
+    font-size: 1.2rem !important;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    margin: 30px 0;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)),
+        url(../images/mulheres\ exercitanto.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+.explore-title {
+    margin-bottom: 20px;
+    font-size: 6vmin;
+}
+
+.explore-text {
+    width: 50%;
+    font-size: 3vmin;
+    margin-bottom: 2rem;
+}
+
+.explore .line {
+    width: 40%;
+}
+
+.download{
+    width: 5%;
+}
+
+.img-download{
+     margin: 0 20px;
+}
+/******************* mobile **********************/
+@media(max-width: 720px) {
+
+    /********************** menu ******************/
+    .header-title a {
+        font-size: 1.8rem;
+    }
+
+    .header-top {
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /******************** fim menu ***************/
+
+    /* tour */
+    .tour-list {
+        flex-direction: column;
+    }
+
+    .tour-list-item {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+}
+
+/************************** fim tour **************************/
+
+.h-bg-multiply {  
+    background-blend-mode: multiply;
+    background-color: #5cc6ba;
+    position: relative;
+    -webkit-filter: grayscale(.75);
+    filter: grayscale(.75);
+    align-items: center;
+    padding: 0 10px;
+}
+.h-bg-cover {
+    background-size:cover;
+    background-position: 100% ;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100vh;
+}
+.background-area{
+    width: 100%;
+    height: 100vh;
+
+}
+.btn {
+    border: 1px solid #5cc6ba;
+    background-color: #5cc6ba;
+    font-weight: 700;
+    letter-spacing: .0625rem;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.btn:hover{
+    color: #fffafa;
+    background-color: #5cc6ba;
+}
+.fundologin{
+    background-color: #e8e8e8;
+}
+.fontecinza{
+    color: #5cc6ba   ;
+}
+.fontecinza:hover{
+    color: #5cc6ba   ;
+}
+
+.letrapequena{
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+.checkbtn{
+    color: #000;
+}
+.checkbtn:checked{
+    color: #fff;
+    border-color: #5cc6ba;
+    background-color: #5cc6ba;
+}
+
+.fundopassword{
+    background-color: #5cc6ba;
+}
+
+.d-flex{
+    width: 100%;
+    height: 100%;
+    margin: 200px auto;
+    padding: 100px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnpasswd {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #5cc6ba;
+    font-weight: 900;
+    letter-spacing: .0900rem;
+    text-transform: uppercase;
+    transition: .5s;
+    border-radius: 2.5px; 
+    padding: 8px;
+ 
+
+}
+.btnpasswd:hover{
+    color: #fffafa;
+    background-color: #5cc6ba;
+}
+
+.footer-bottom{
+    width:100%;
+    Height:49px;
+    background: #e8e8e8
+    
+}
+
+.top-app{
+    padding: 180px 0 10px;
+  
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+.footer-nav li{
+    margin: 0 10px;
+}
+
+.footer-nav a{
+    font-size: 1.0rem;
+    font-weight: 1000;
+    transition: .5s;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.app-list {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+ 
+
+}
+
+.app-list2 {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+.app-item {
+    margin: 20px 60px;
+    
+
+}
